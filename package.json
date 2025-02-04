@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@emailjs/browser": "4.4.1",
     "@fortawesome/fontawesome-svg-core": "6.6.0",
     "@fortawesome/free-brands-svg-icons": "6.6.0",
@@ -20,7 +21,7 @@
     "react-spinners": "0.14.1",
     "react-toastify": "10.0.6",
     "react-tsparticles": "2.12.2",
-    "sass": "1.80.6",
+    "sass": "^1.83.4",
     "styled-components": "6.1.13",
     "TagCloud": "2.5.0",
     "tsparticles": "3.5.0",

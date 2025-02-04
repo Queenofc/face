@@ -1,3 +1,4 @@
+@use 'sass:math';
 .page {
   width: 100%;
   height: 100%;
@@ -10,15 +11,15 @@
 }
 
 .tags {
-  // color: #ffd700;
-  // color: #ff4500; // red
-  color: #00ff7f; // green
+  color: #76bec6;
+  font-size: 22px;
+  font-weight: bold; 
   opacity: 0.9;
   position: absolute;
   bottom: 0;
   left: 120px;
   font-size: 18px;
-  font-family: 'La Belle Aurore', cursive;
+  font-family: "La Belle Aurore", cursive;
 }
 
 .bottom-tag-html {
@@ -55,8 +56,8 @@
 
     h1 {
       font-size: 53px;
-      font-family: 'Coolvetica';
-      color: #00ff7f;
+      font-family: "Coolvetica";
+      color: #ec6e76;
       font-weight: 400;
       margin-top: 0;
       position: relative;
@@ -64,10 +65,11 @@
       left: -10px;
 
       &:before {
-        content: '<h1>';
-        font-family: 'La Belle Aurore', cursive;
-        color: #00ff7f;
-        font-size: 18px;
+        content: "<h1>";
+        font-family: "La Belle Aurore", cursive;
+        color: #7abfee;
+        font-size: 22px;
+        font-weight: bold;
         position: absolute;
         margin-top: -10px;
         left: -10px;
@@ -76,10 +78,11 @@
       }
 
       &:after {
-        content: '<h1/>';
-        font-family: 'La Belle Aurore', cursive;
-        color: #00ff7f;
-        font-size: 18px;
+        content: "<h1/>";
+        font-family: "La Belle Aurore", cursive;
+        color: #7abfee;
+        font-size: 22px;
+        font-weight: bold;
         line-height: 18px;
         position: absolute;
         left: -30px;
@@ -110,16 +113,16 @@
 
   .text-animate-hover {
     &:hover {
-      color: #ff4500;
+      color: #ff008c;
     }
   }
 }
 
 // n is number of stars required
 @function multiple-box-shadow($n) {
-  $value: '#{random(2000)}px #{random(2000)}px #FFF';
+  $value: "#{math.random(2000)}px #{math.random(2000)}px #FFF";
   @for $i from 2 through $n {
-    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF';
+    $value: "#{$value} , #{math.random(2000)}px #{math.random(2000)}px #FFF";
   }
   @return unquote($value);
 }
@@ -141,7 +144,7 @@ html {
   animation: animStar 50s linear infinite;
 
   &:after {
-    content: ' ';
+    content: " ";
     position: absolute;
     top: 2000px;
     width: 1px;
@@ -158,7 +161,7 @@ html {
   animation: animStar 100s linear infinite;
 
   &:after {
-    content: ' ';
+    content: " ";
     position: absolute;
     top: 2000px;
     width: 2px;
@@ -175,7 +178,7 @@ html {
   animation: animStar 150s linear infinite;
 
   &:after {
-    content: ' ';
+    content: " ";
     position: absolute;
     top: 2000px;
     width: 3px;

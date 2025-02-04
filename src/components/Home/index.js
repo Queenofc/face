@@ -3,18 +3,16 @@ import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import { Link } from 'react-router-dom'
 
-import Logo from './Logo'
-import LogoTitle from '../../assets/images/logo-s.png'
+import LogoTitle from '../../assets/images/logo11.png'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
-import styles from './index.scss'
+
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-  const nameArray = 'udip'.split('')
-  const jobArray = 'Software Engineer'.split('')
-  const interestArray = 'FullStack | DevOps | Web3'.split('')
+  const nameArray = 'hibani'.split('')
+  const jobArray = 'an Engineering Student'.split('')
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -29,11 +27,18 @@ const Home = () => {
         <div className="text-zone">
           <h1>
             <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i,</span>
+            <span className={`${letterClass} _12`}>i</span>
+            <br/>
+            <span className={`${letterClass} _121`}>t</span>
+            <span className={`${letterClass} _122`}>h</span>
+            <span className={`${letterClass} _123`}>e</span>
+            <span className={`${letterClass} _124`}>r</span>
+            <span className={`${letterClass} _125`}>e</span>
+            <span className={`${letterClass} _126`}>!</span>
             <br />
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'m</span>
-            <img src={LogoTitle} alt="Sudip Banerjee" />
+            <img src={LogoTitle} alt="Shibani" />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
@@ -45,22 +50,15 @@ const Home = () => {
               strArray={jobArray}
               idx={22}
             />
-            <br />
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={interestArray}
-              idx={22}
-            />
           </h1>
+          <br/>
           <h2>
-            Streamlining Workflows | Deploying Intelligent Systems | Building
-            Scalable Applications
+          I am passionate about learning new technologies and building intuitive, responsive websites. I strive to improve my skills in front-end and back-end development to create efficient and user-friendly applications.
           </h2>
           <Link to="/contact" className="flat-button">
-            CONTACT ME
+            Contact Me
           </Link>
         </div>
-        <Logo />
       </div>
 
       <Loader type="pacman" />
