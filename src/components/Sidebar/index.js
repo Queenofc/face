@@ -9,7 +9,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link, NavLink } from 'react-router-dom'
 
-import LogoS from '../../assets/images/logo-s.png'
+import LogoS from '../../assets/images/logo11.png'
 
 
 const Sidebar = () => {
@@ -46,7 +46,7 @@ const Sidebar = () => {
         <ul>
           <li>
             <a
-              href="https://www.linkedin.com/in/banerjee-sudip/"
+              href="https://www.linkedin.com/in/shibani-r-71ab752a5/"
               target="_blank"
               rel="noreferrer"
             >
@@ -55,7 +55,7 @@ const Sidebar = () => {
           </li>
           <li>
             <a
-              href="https://github.com/metal-oopa"
+              href="https://github.com/Queenofc"
               target="_blank"
               rel="noreferrer"
             >

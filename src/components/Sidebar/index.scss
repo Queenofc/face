@@ -9,17 +9,13 @@
 
   .logo {
     display: block;
-    padding: 8px 0;
+    padding: 10px;
 
     img {
       display: block;
-      margin: 8px auto;
-      width: 24px;
+      margin: 10px auto;
+      width: 25px;
       height: auto;
-
-      &.sub-logo {
-        width: 50px;
-      }
     }
   }
 
@@ -58,7 +54,7 @@
       }
 
       &:after {
-        content: '';
+        content: "";
         font-size: 9px;
         letter-spacing: 2px;
         position: absolute;
@@ -73,26 +69,42 @@
 
       &:first-child {
         &:after {
-          content: 'HOME';
+          font-family: "La Belle Aurore", cursive;
+          letter-spacing: 0px;
+          font-weight: bold;
+          font-size: large;
+          content: "Home";
         }
       }
     }
 
     a.about-link {
       &:after {
-        content: 'ABOUT';
+        font-family: "La Belle Aurore", cursive;
+        letter-spacing: 0px;
+        font-weight: bold;
+        font-size: large;
+        content: "About";
       }
     }
 
     a.contact-link {
       &:after {
-        content: 'CONTACT';
+        font-family: "La Belle Aurore", cursive;
+        letter-spacing: 0px;
+        font-weight: bold;
+        font-size: large;
+        content: "Contact";
       }
     }
 
     a.skills-link {
       &:after {
-        content: 'SKILLS';
+        font-family: "La Belle Aurore", cursive;
+        letter-spacing: 0px;
+        font-weight: bold;
+        font-size: large;
+        content: "Skills";
       }
     }
 
@@ -115,9 +127,9 @@
 
     li {
       a {
-        padding: 7px 0;
+        padding: 10px 10px;
         display: block;
-        font-size: 15px;
+        font-size: 25px;
         line-height: 16px;
         color: #4d4d4e;
 
