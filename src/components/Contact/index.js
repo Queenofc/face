@@ -170,31 +170,13 @@ const Contact = () => {
                     className="flat-button"
                     disabled={loading}
                   >
-                    {loading ? <ClipLoader color="#fff" size={20} /> : 'SEND'}
+                    {loading ? <ClipLoader color="#fff" size={20} /> : 'Send'}
                   </button>
                 </li>
               </ul>
               <ToastContainer />
             </form>
           </div>
-        </div>
-        <div className="map-wrap">
-          <div className="info-map">
-            Sudip Banerjee
-            <br />
-            Kolkata, <br />
-            West Bengal, <br />
-            India
-            <br />
-          </div>
-          <MapContainer center={[22.56263, 88.36304]} zoom={13}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[22.56263, 88.36304]}>
-              <Popup>
-                Sudip lives here, come over for a cup of coffee :{')'}
-              </Popup>
-            </Marker>
-          </MapContainer>
         </div>
       </div>
       <Loader type="pacman" />
