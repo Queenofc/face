@@ -53,7 +53,7 @@ const Home = () => {
           </h1>
           <br/>
           <h2>
-          I am passionate about learning new technologies and building intuitive, responsive websites. I strive to improve my skills in front-end and back-end development to create efficient and user-friendly applications.
+          Where Innovation Meets Passion: Dive Into My Creative Journey.
           </h2>
           <Link to="/contact" className="flat-button">
             Contact Me

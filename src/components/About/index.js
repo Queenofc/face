@@ -16,7 +16,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 
 const About = () => {
-  const aboutArray = 'About Me'.split('')
+  const aboutArray = 'Skillset'.split('')
 
   const [letterClass, setLetterClass] = useState('text-animate')
 
@@ -39,17 +39,10 @@ const About = () => {
             />
           </h1>
           <p>
-            I’m a DevOps and Full Stack Engineer with over 2 years of
-            experience, specializing in automating workflows, optimizing CI/CD
-            pipelines, and deploying intelligent systems. My expertise spans
-            across DevOps, full-stack, blockchain development, and aritificial
-            intelligence, with a strong foundation in security.
+          I’m a passionate web developer with a knack for building things that live on the web. My toolkit includes <span className='tech'>HTML</span>,<span className='tech'> CSS</span>,<span className='tech'> JavaScript</span>,<span className='tech'> React</span>, and <span className='tech'>Python</span> for crafting dynamic and responsive interfaces, paired with <span className='tech'> Node.js</span>,<span className='tech'> Express</span>, and <span className='tech'>MySql</span> to power robust backends. I’ve also got hands-on experience with <span className='tech'>Postman</span> for API testing and use <span className='tech'>Git / Github</span> to keep my projects organized and collaborative.
           </p>
           <p>
-            I’m passionate about solving real-world problems through innovative
-            technology and continuously learning to stay ahead of industry
-            trends. Whether it's streamlining infrastructure or building
-            scalable applications, I bring a holistic approach to every project.
+          I’m passionate about building scalable, efficient, and user-friendly web apps that solve real-world problems. From crafting sleek frontends to optimizing backend performance, I love tackling challenges and turning ideas into reality. Let’s build something awesome! 🚀
           </p>
         </div>
 
