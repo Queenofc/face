@@ -78,13 +78,13 @@
       }
     }
 
-    a.about-link {
+    a.skills-link {
       &:after {
         font-family: "La Belle Aurore", cursive;
         letter-spacing: 0px;
         font-weight: bold;
         font-size: large;
-        content: "About";
+        content: "Skills";
       }
     }
 
@@ -98,13 +98,13 @@
       }
     }
 
-    a.skills-link {
+    a.projects-link{
       &:after {
         font-family: "La Belle Aurore", cursive;
         letter-spacing: 0px;
         font-weight: bold;
         font-size: large;
-        content: "Skills";
+        content: "Projects";
       }
     }
 

@@ -1,16 +1,15 @@
-import './index.scss'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import "./index.scss";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
   faHome,
   faScrewdriverWrench,
   faUser,
-} from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Link, NavLink } from 'react-router-dom'
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link, NavLink } from "react-router-dom";
 
-import LogoS from '../../assets/images/logo11.png'
-
+import LogoS from "../../assets/images/logo11.png";
 
 const Sidebar = () => {
   return (
@@ -23,14 +22,18 @@ const Sidebar = () => {
           <NavLink exact="true" activeclassname="active" to="/">
             <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
           </NavLink>
-          <NavLink activeclassname="active" className="about-link" to="/about">
+          <NavLink
+            activeclassname="active"
+            className="skills-link"
+            to="/skills"
+          >
             <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
           </NavLink>
 
           <NavLink
             activeclassname="active"
-            className="skills-link"
-            to="/skills"
+            className="projects-link"
+            to="/projects"
           >
             <FontAwesomeIcon icon={faScrewdriverWrench} color="#4d4d4e" />
           </NavLink>
@@ -65,7 +68,7 @@ const Sidebar = () => {
         </ul>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;

@@ -1,22 +1,32 @@
-import { useEffect, useState } from 'react'
+/* eslint-disable no-unused-vars */
 
-import Loader from 'react-loaders'
+import { useEffect, useState } from "react";
 
-import WordCloud from './wordcloud'
-import AnimatedLetters from '../AnimatedLetters'
-import './index.scss'
+import {
+  faJsSquare,
+  faNodeJs,
+  faPython,
+  faReact,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Loader from "react-loaders";
+
+import mysqlLogo from "../../assets/images/mysql.png";
+import postmanLogo from "../../assets/images/postman.svg";
+import AnimatedLetters from "../AnimatedLetters";
+import "./index.scss";
 
 const Skills = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const aboutArray = "TechStack".split("");
 
-  const skillsArray = 'Skills'.split('')
+  const [letterClass, setLetterClass] = useState("text-animate");
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 2000)
-    return () => clearTimeout(timer)
-  }, [])
+      setLetterClass("text-animate-hover");
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
@@ -25,34 +35,62 @@ const Skills = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={skillsArray}
+              strArray={aboutArray}
               idx={15}
             />
-            <br />
           </h1>
           <p>
-            I have a strong foundation in both development and operations, with
-            a focus on creating seamless, efficient systems. My experience
-            includes automating deployment processes, designing scalable
-            applications, and working with cloud technologies to deliver
-            reliable solutions.
+            I’m a passionate web developer with a knack for building things that
+            live on the web. My toolkit includes{" "}
+            <span className="tech">HTML</span>,
+            <span className="tech"> CSS</span>,
+            <span className="tech"> JavaScript</span>,
+            <span className="tech"> React</span>, and{" "}
+            <span className="tech">Python</span> for crafting dynamic and
+            responsive interfaces, paired with{" "}
+            <span className="tech"> Node.js</span>,
+            <span className="tech"> Express</span>, and{" "}
+            <span className="tech">MySql</span> to power robust backends. I’ve
+            also got hands-on experience with{" "}
+            <span className="tech">Postman</span> for API testing and use{" "}
+            <span className="tech">Git / Github</span> to keep my projects
+            organized and collaborative.
           </p>
           <p>
-            My skill set spans across DevOps, machine learning, full-stack
-            development, and cloud infrastructure. I’m committed to staying
-            updated with the latest advancements and continually refining my
-            expertise to tackle complex challenges effectively.
+            I’m passionate about building scalable, efficient, and user-friendly
+            web apps that solve real-world problems. From crafting sleek
+            frontends to optimizing backend performance, I love tackling
+            challenges and turning ideas into reality. Let’s build something
+            awesome! 🚀
           </p>
         </div>
 
-        <div className="tagcloud-wrap">
-          <WordCloud />
+        <div className="stage-cube-cont">
+          <div className="cubespinner">
+            <div className="face1">
+              <FontAwesomeIcon icon={faPython} color="#4B8BBE" />
+            </div>
+            <div className="face2">
+              <FontAwesomeIcon icon={faNodeJs} color="#3c873a" />
+            </div>
+            <div className="face3">
+              <FontAwesomeIcon icon={faReact} />
+            </div>
+            <div className="face4">
+              <img src={mysqlLogo} />
+            </div>
+            <div className="face5">
+              <FontAwesomeIcon icon={faJsSquare} />
+            </div>
+            <div className="face6">
+              <img src={postmanLogo} alt="Postman" />
+            </div>
+          </div>
         </div>
       </div>
-
       <Loader type="pacman" />
     </>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;
