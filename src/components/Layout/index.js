@@ -16,7 +16,7 @@ const Layout = () => {
           <div id="stars2"></div>
           <div id="stars3"></div>
           &lt;/body&gt;
-          <br />
+          <br/>
           <span className="bottom-tag-html">&lt;/html&gt;</span>
         </span>
       </div>

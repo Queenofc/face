@@ -4,14 +4,15 @@
     left: 10%;
     top: 50%;
     transform: translateY(-50%);
-    width: 40%;
     max-height: 90%;
+    width: 100%;
 
     h1 {
       color: #fff;
       font-size: 60px;
       line-height: 63px;
       margin: 0;
+      left: 10%;
       font-family: 'Coolvetica';
       font-weight: 400;
       letter-spacing: 2px;
@@ -94,3 +95,146 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .text-zone {
+    left: 5%;
+    h1 {
+      font-size: 50px;
+      line-height: 53px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .text-zone {
+    left: 3%;
+    h1 {
+      font-size: 45px;
+      line-height: 50px;
+    }
+  }
+
+  .flat-button {
+    font-size: 18px;
+    padding: 8px 15px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-zone {
+    top: 40%;
+    left: 10%;
+    h1 {
+      font-size: 40px;
+      line-height: 45px;
+    }
+
+    img {
+      width: 35px;
+      margin-left: 10px;
+    }
+  }
+
+  .flat-button {
+    font-size: 16px;
+    padding: 8px 12px;
+    margin-top: 15px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .home-page {
+    .text-zone {
+      position: absolute;
+      left: 20%;
+      top: 50%;
+      transform: translateY(-50%);
+      max-height: 90%;
+      width: 100%;
+  
+      h1 {
+        color: #fff;
+        font-size: 45px;
+        max-width: 300px;
+        line-height: 55px;
+        margin: 0;
+        left: 10%;
+        font-family: 'Coolvetica';
+        letter-spacing: 1px;
+  
+        &:before {
+          content: '<h1>';
+          font-family: 'La Belle Aurore', cursive;
+          color: #7ABFEE;
+          font-size: 20px;
+          font-weight: bold;
+          position: absolute;
+          margin-top: -40px;
+          left: 0px;
+          opacity: 0.9;
+        }
+  
+        &:after {
+          content: '<h1/>';
+          font-family: 'La Belle Aurore', cursive;
+          color: #7ABFEE;
+          font-size: 20px;
+          font-weight: bold;
+          position: absolute;
+          margin-top: 10px;
+          margin-left: 9px;
+          animation: fadeIn 1s 1.7s backwards;
+          opacity: 0.9;
+        }
+      }
+  
+      img {
+        margin-left: 20px;
+        opacity: 0;
+        width: 30px;
+        height: auto;
+        animation: rotateIn 1s linear both;
+        animation-delay: 1.4s;
+        user-select: none;
+      }
+    }
+  
+    h2 {
+      color:  #ff008c;
+      margin-top: 5px;
+      font-weight: bold;
+      max-width: 300px;
+      font-size: 16px;
+      font-family: sans-serif;
+      letter-spacing: 1.5px;
+      animation: fadeIn 1s 1.8s backwards;
+    }
+  
+    .flat-button {
+      color: #ff008c;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-family: 'Coolvetica';
+      text-decoration: none;
+      padding: 10px 18px;
+      border: 1px solid #7ABFEE;
+      margin-top: 5px;
+      float: left;
+      animation: fadeInAnimation 0.2s 1.8s backwards;
+      white-space: nowrap;
+      border-radius: 25px;
+  
+      &:hover {
+        background: #7ABFEE;
+        font-weight: bold;
+        color:   #ff008c;
+      }
+    }
+}
+}
