@@ -21,7 +21,7 @@ const Box = styled.div`
   cursor: pointer;
   position: fixed;
   right: 8rem;
-  top: 3rem;
+  top: 1.5rem;
   z-index: 3;
   background: white;
   padding: 15px;
