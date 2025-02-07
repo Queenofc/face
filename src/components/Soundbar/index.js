@@ -20,7 +20,7 @@ const Box = styled.div`
   display: flex;
   cursor: pointer;
   position: fixed;
-  right: 20rem;
+  right: 3rem;
   top: 2rem;
   z-index: 3;
   background: white;
@@ -37,14 +37,6 @@ const Box = styled.div`
   }
   & > *:nth-child(4) {
     animation-delay: 0.5s;
-  }
-  @media (max-width: 768px) {
-    right:14rem;
-    top: 2rem;
-  }
-  @media (max-width: 576px) {
-    right:8rem;
-    top: 2rem;
   }
 `;
 
