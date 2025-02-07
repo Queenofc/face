@@ -20,7 +20,7 @@ const Box = styled.div`
   display: flex;
   cursor: pointer;
   position: fixed;
-  right: 4rem;
+  right: 20rem;
   top: 2rem;
   z-index: 3;
   background: white;
@@ -39,11 +39,11 @@ const Box = styled.div`
     animation-delay: 0.5s;
   }
   @media (max-width: 768px) {
-    right: 3rem;
+    right:14rem;
     top: 2rem;
   }
   @media (max-width: 576px) {
-    right: 3.5rem;
+    right:8rem;
     top: 2rem;
   }
 `;

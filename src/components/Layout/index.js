@@ -2,11 +2,13 @@ import { Outlet } from 'react-router-dom'
 
 import Sidebar from '../Sidebar/'
 import './index.scss'
+import SoundBar from '../Soundbar'
 
 const Layout = () => {
   return (
     <div className="App">
       <Sidebar />
+      <SoundBar/>
       <div className="page">
         <span className="tags top-tags">&lt;body&gt;</span>
 
