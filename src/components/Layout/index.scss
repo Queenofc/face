@@ -46,10 +46,10 @@
 .container.projects-page {
   .text-zone {
     position: absolute;
-    left: 10%;
+    left: 20%;
     top: 50%;
     transform: translateY(-50%);
-    width: 35%;
+    width: 65vw;
     vertical-align: middle;
     display: table-cell;
     max-height: 90%;
@@ -72,7 +72,7 @@
         font-weight: bold;
         position: absolute;
         margin-top: -10px;
-        left: -10px;
+        left: -30px;
         opacity: 0.6;
         line-height: 18px;
       }
@@ -118,119 +118,6 @@
   }
 }
 
-@media (max-width: 768px) {
-  .page {
-    width: 100%;
-    height: 100%;
-    user-select: none;
-  }
-
-  .top-tags {
-    bottom: auto;
-    top: 20px;
-    margin-left: -55px;
-  }
-
-  .tags {
-    color: #76bec6;
-    font-size: 20px;
-    font-weight: bold;
-    opacity: 0.9;
-    position: absolute;
-    bottom: 0;
-    left: 120px;
-    margin-left: -50px;
-    font-size: 18px;
-    font-family: "La Belle Aurore", cursive;
-  }
-  .bottom-tag-html {
-    margin-left: -8px;
-  }
-  .container.contact-page,
-.container.skills-page,
-.container.projects-page {
-  .text-zone {
-    position: absolute;
-    left: 20%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 35%;
-    max-height: 90%;
-    max-width: 100vw;
-
-    h1 {
-      font-size: 40px;
-      font-family: "Coolvetica";
-      color: #ec6e76;
-      font-weight: 400;
-      width: 100vw;
-      margin-top: 10px;
-      position: relative;
-      margin-bottom: 5px;
-      left: 20px;
-
-      &:before {
-        content: "<h1>";
-        font-family: "La Belle Aurore", cursive;
-        color: #7abfee;
-        font-size: 18px;
-        font-weight: bold;
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        margin-top: -10px;
-        left: -19px;
-        opacity: 0.6;
-        line-height: 18px;
-      }
-
-      &:after {
-        content: "<h1/>";
-        font-family: "La Belle Aurore", cursive;
-        color: #7abfee;
-        font-size: 18px;
-        font-weight: bold;
-        line-height: 18px;
-        position: absolute;
-        left: -30px;
-        bottom: -20px;
-        margin-left: 9px;
-        opacity: 0.6;
-      }
-    }
-
-    p {
-      margin-top: 25px;
-      font-size: 14px;
-      padding-left: 20px;
-      color: #fff;
-      font-family: sans-serif;
-      font-weight: 300;
-      max-width: 250px;
-      animation: pulse 1s;
-      justify-content: center;
-      &:nth-of-type(1) {
-        animation-delay: 1.1s;
-        width: 300px;
-
-      }
-      &:nth-of-type(2) {
-        width: 300px;
-        animation-delay: 1.2s;
-      }
-      &:nth-of-type(3) {
-        animation-delay: 1.3s;
-      }
-    }
-  }
-
-  .text-animate-hover {
-    &:hover {
-      color: #ff008c;
-    }
-  }
-}
-}
 
 // n is number of stars required
 @function multiple-box-shadow($n) {
@@ -400,16 +287,16 @@ html {
       color: #fff;
       font-family: sans-serif;
       font-weight: 300;
-      max-width: 250px;
+      max-width: 500px;
       animation: pulse 1s;
       justify-content: center;
       &:nth-of-type(1) {
         animation-delay: 1.1s;
-        width: 300px;
+        width: 70vw;
 
       }
       &:nth-of-type(2) {
-        width: 300px;
+        width: 100vw;
         animation-delay: 1.2s;
       }
       &:nth-of-type(3) {
