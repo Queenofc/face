@@ -2,9 +2,10 @@ import { useEffect, useState } from "react";
 
 import Loader from "react-loaders";
 
+import blog from "../../assets/images/blog.png";
+import mindflow from "../../assets/images/mindflow.png";
 import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
-
 const Projects = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
 
@@ -19,16 +20,16 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "MindFlow - AI Assistant",
+      title: "MindFlow - Ai Assistant",
       description:
         "An AI-powered assistant for focus and creativity, helping users brainstorm, solve problems, and unlock their full potential.",
-      image: "",
+      image: mindflow,
     },
     {
-      title: "BlogPost Application",
+      title: "Blog Application",
       description:
         "A full-stack blogging platform using React, Node.js, and MySQL. It includes user authentication, rich text editing, and image uploads.",
-      image: "",
+      image: blog,
     },
   ];
 
@@ -44,16 +45,10 @@ const Projects = () => {
             />
             <br />
           </h1>
-          <p>Here are some projects I have worked on:</p>
-
           <div className="projects-grid">
             {projects.map((project, index) => (
               <div key={index} className="project-box">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="project-image"
-                />
+                <img src={project.image} alt={project.title} className="project-image" />
                 <div className="project-content">
                   <h2>{project.title}</h2>
                   <p>{project.description}</p>
