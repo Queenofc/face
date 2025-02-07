@@ -38,6 +38,10 @@ const Box = styled.div`
   & > *:nth-child(4) {
     animation-delay: 0.5s;
   }
+    @media (max-width: 500px) {
+      right: 0.5rem;
+  top: 0.5rem;
+  }
 `;
 
 const Line = styled.span`
@@ -58,6 +62,12 @@ const Line = styled.span`
     height: 0.8rem; 
     width: 1px;
     padding:0.8px;
+}
+    @media (max-width: 500px) {
+      height: 0.02rem; 
+    width: 0.015rem;
+      border: 0.5px solid;
+  }
 `;
 
 const SoundBar = () => {
