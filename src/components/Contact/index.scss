@@ -167,3 +167,89 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+
+  .contact-form {
+    width: 80vw;
+    margin-top: 10px;
+
+    ul {
+      padding: 10px;
+      align-items: center;
+
+      li {
+        padding: 0;
+        margin: 0;
+        border-radius: 0.5rem;
+        list-style: none;
+        margin-bottom: 10px;
+        opacity: 0;
+        overflow: hidden;
+        display: block;
+        clear: both;
+        position: relative;
+        animation: fadeInUp 2s 2s;
+        animation-fill-mode: forwards;
+      }
+
+      li.half {
+        width: 49%;
+        margin-left: 2%;
+        float: left;
+        clear: none;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      border: 0;
+      background: #353535;
+      height: 30px;
+      font-size: 12px;
+      color: #fff;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      width: 100%;
+      border: 0;
+      background: #353535;
+      height: 8px;
+      font-size: 12px;
+      color: #fff;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+
+    .flat-button {
+      color: #ff008c;
+      font-size: 15px;
+      letter-spacing: 1.8px;
+      text-decoration: none;
+      padding: 10px 18px;
+      border: 1px solid #ff008c;
+      float: left;
+      border-radius: 25px;
+      background: 0 0;
+      float: right;
+      text-align: center;
+      margin-right: 10px;
+      font-weight: bold;
+      font-family: "Coolvetica";
+      &:hover {
+        cursor: pointer;
+        background-color: #7abfee;
+        color: #ff008c;
+        border: none;
+        font-weight: bold;
+      }
+    }
+  }
+}
