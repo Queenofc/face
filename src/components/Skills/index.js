@@ -11,8 +11,8 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Loader from "react-loaders";
 
-import mysqlLogo from "../../assets/images/mysql.png";
-import postmanLogo from "../../assets/images/postman.svg";
+import htmlLogo from "../../assets/images/html.svg";
+import mysqlLogo from "../../assets/images/mysql.svg";
 import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
 
@@ -39,6 +39,28 @@ const Skills = () => {
               idx={15}
             />
           </h1>
+          <div className="stage-cube-cont">
+            <div className="cubespinner">
+              <div className="face1">
+                <FontAwesomeIcon icon={faPython} color="#4B8BBE" />
+              </div>
+              <div className="face2">
+                <FontAwesomeIcon icon={faNodeJs} color="#3c873a" />
+              </div>
+              <div className="face3">
+                <FontAwesomeIcon icon={faReact} />
+              </div>
+              <div className="face4">
+                <img src={mysqlLogo}/>
+              </div>
+              <div className="face5">
+                <FontAwesomeIcon icon={faJsSquare} />
+              </div>
+              <div className="face6">
+                <img src={htmlLogo} />
+              </div>
+            </div>
+          </div>
           <p>
             I’m a passionate web developer with a knack for building things that
             live on the web. My toolkit includes{" "}
@@ -63,29 +85,6 @@ const Skills = () => {
             challenges and turning ideas into reality. Let’s build something
             awesome! 🚀
           </p>
-        </div>
-
-        <div className="stage-cube-cont">
-          <div className="cubespinner">
-            <div className="face1">
-              <FontAwesomeIcon icon={faPython} color="#4B8BBE" />
-            </div>
-            <div className="face2">
-              <FontAwesomeIcon icon={faNodeJs} color="#3c873a" />
-            </div>
-            <div className="face3">
-              <FontAwesomeIcon icon={faReact} />
-            </div>
-            <div className="face4">
-              <img src={mysqlLogo} />
-            </div>
-            <div className="face5">
-              <FontAwesomeIcon icon={faJsSquare} />
-            </div>
-            <div className="face6">
-              <img src={postmanLogo} alt="Postman" />
-            </div>
-          </div>
         </div>
       </div>
       <Loader type="pacman" />
