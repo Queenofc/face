@@ -1,8 +1,8 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState } from "react";
 
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from "styled-components";
 
-import music from '../../assets/sounds/portfolio theme.mpeg';
+import music from "../../assets/sounds/portfolio theme.mpeg";
 
 const play = keyframes`
   0% {
@@ -20,13 +20,13 @@ const Box = styled.div`
   display: flex;
   cursor: pointer;
   position: fixed;
-  right: 8rem;
-  top: 1.5rem;
+  right: 4rem;
+  top: 2rem;
   z-index: 3;
   background: white;
   padding: 15px;
   border-radius: 25px;
-   & > *:nth-child(1) {
+  & > *:nth-child(1) {
     animation-delay: 0.2s;
   }
   & > *:nth-child(2) {
@@ -38,17 +38,34 @@ const Box = styled.div`
   & > *:nth-child(4) {
     animation-delay: 0.5s;
   }
+  @media (max-width: 768px) {
+    right: 3rem;
+    top: 2rem;
+  }
+  @media (max-width: 576px) {
+    right: 3.5rem;
+    top: 2rem;
+  }
 `;
 
 const Line = styled.span`
   background: black;
   border: 1px solid;
   animation: ${play} 1s ease infinite;
-  animation-play-state: ${(props) => (props.playing ? 'running' : 'paused')};
+  animation-play-state: ${(props) => (props.playing ? "running" : "paused")};
   height: 1rem;
   width: 2px;
   padding:2px;
   margin: 0 0.1rem;
+    @media (max-width: 768px) {
+    height: 0.9rem; 
+    width: 2px;
+    padding:0.7px;
+  }
+    @media (max-width: 576px) {
+    height: 0.8rem; 
+    width: 1px;
+    padding:0.8px;
 `;
 
 const SoundBar = () => {
