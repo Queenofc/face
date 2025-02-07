@@ -51,10 +51,10 @@
   max-height: 100vh;
   .text-zone {
     position: absolute;
-    left: 10%;
+    left: 20%;
     top: 45%;
     transform: translateY(-50%);
-    max-width: 80vw;
+    max-width: 75vw;
     max-height: 90%;
 
     h1 {
@@ -62,7 +62,7 @@
       font-family: "Coolvetica";
       color: #ec6e76;
       font-weight: 400;
-      margin-top: 0;
+      margin-top: 10px;
       position: relative;
       margin-bottom: 0px;
       left: -10px;
@@ -198,7 +198,6 @@
           bottom: -20px;
           margin-left: 9px;
           opacity: 0.6;
-          margin-bottom: 10px;
         }
       }
 
