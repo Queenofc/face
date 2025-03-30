@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Loader from "react-loaders";
 
 import blog from "../../assets/images/blog.png";
-import pomo from "../../assets/images/mindflow.png";
+import pomo from "../../assets/images/pomo.png";
 import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
 const Projects = () => {
@@ -22,7 +22,7 @@ const Projects = () => {
     {
       title: "Chill with Pomodoro",
       description:
-        "Stay focused and relaxed with **Chill with Pomodoro**, a timer that blends productivity with mood-based music for a stress-free workflow."
+        "Stay focused and relaxed with Chill with Pomodoro, a timer that blends productivity with mood-based music for a stress-free workflow.",
       image: pomo,
     },
     {
