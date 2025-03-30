@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Loader from "react-loaders";
 
 import blog from "../../assets/images/blog.png";
-import mindflow from "../../assets/images/mindflow.png";
+import pomo from "../../assets/images/mindflow.png";
 import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
 const Projects = () => {
@@ -20,10 +20,10 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "MindFlow - Ai Assistant",
+      title: "Chill with Pomodoro",
       description:
-        "An AI-powered assistant for focus and creativity, helping users brainstorm, solve problems, and unlock their full potential.",
-      image: mindflow,
+        "Stay focused and relaxed with **Chill with Pomodoro**, a timer that blends productivity with mood-based music for a stress-free workflow."
+      image: pomo,
     },
     {
       title: "Blog Application",
