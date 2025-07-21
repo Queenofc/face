@@ -53,7 +53,7 @@ const Home = () => {
           </h1>
           <br/>
           <h2>
-          From Code to Creation: My Path into Full-Stack Web Development.
+          On a journey to build with React, Node, and JavaScript.
           </h2>
           <Link to="/contact" className="flat-button">
             Contact Me
