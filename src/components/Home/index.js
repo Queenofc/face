@@ -53,7 +53,7 @@ const Home = () => {
           </h1>
           <br/>
           <h2>
-          Where Innovation Meets Passion: Dive Into My Creative Journey.
+          Aspiring full-stack developer | Learning to build web apps with JavaScript, React, Node.js & more | Always building, always learning 🚀
           </h2>
           <Link to="/contact" className="flat-button">
             Contact Me
